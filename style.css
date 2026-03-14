@@ -82,3 +82,13 @@ select {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+.oferta-box {
+    background-color: #fff3cd; /* Amarelo clarinho de destaque */
+    border: 2px dashed #ffc107;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #856404;
+}
