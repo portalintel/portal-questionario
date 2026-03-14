@@ -48,17 +48,13 @@ input:focus, select:focus {
     outline: none; 
     border-color: #007bff; 
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(0,123,255,0.1);
 }
-
-/* Validação Visual */
-input:invalid { border-color: #ffcccc; }
 
 /* 5. Radio Buttons */
 .radio-group { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
 input[type="radio"] { width: 20px; height: 20px; cursor: pointer; }
 
-/* 6. Oferta Box */
+/* 6. Oferta e Missão */
 .oferta-box {
     background-color: #fff8e1;
     border: 2px dashed #ffc107;
@@ -68,48 +64,28 @@ input[type="radio"] { width: 20px; height: 20px; cursor: pointer; }
     margin-bottom: 25px;
     font-size: 0.95rem;
     color: #856404;
-    line-height: 1.4;
 }
 
-/* 7. Container dos Botões (Lado a Lado) */
+.mission-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* 7. Empilhamento de Botões (Vertical) */
 .button-container {
     display: flex;
-    gap: 15px;
+    flex-direction: column; /* Empilha os botões */
+    gap: 12px; /* Espaçamento entre os botões */
 }
 
 button[type="submit"], .btn-oferta {
-    flex: 1;
+    width: 100%; /* Largura total */
     padding: 16px;
     border-radius: 12px;
     text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
-    text-decoration: none;
-}
-
-button[type="submit"] { background-color: #007bff; color: white; }
-.btn-oferta { background-color: #28a745; color: white; }
-
-button:hover, .btn-oferta:hover { opacity: 0.9; transform: translateY(-2px); }
-
-.btn-oferta {
-    flex: 1;
-    background-color: #28a745; /* Verde */
-    color: white;
-    text-align: center;
-    padding: 16px;
-    border-radius: 12px;
-    font-weight: bold;
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-size: 16px;
-    display: inline-block;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.btn-oferta:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
+    font-weight: bold
