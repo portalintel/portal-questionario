@@ -2,12 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Questionário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <form id="meuQuestionario" action="https://formspree.io/f/mdawlnnp" method="POST">
+        <input type="hidden" name="_next" value="https://SEU_USUARIO.github.io/meu-questionario/oferta.html">
+
         <fieldset>
             <legend>Informações Pessoais</legend>
             <label for="nome">Nome:</label>
@@ -16,16 +19,14 @@
 
         <fieldset>
             <legend>Pergunta 1: Qual sua linguagem favorita?</legend>
-            <input type="radio" id="js" name="linguagem" value="javascript">
+            <input type="radio" id="js" name="linguagem" value="javascript" required>
             <label for="js">JavaScript</label>
             
-            <input type="radio" id="python" name="linguagem" value="python">
+            <input type="radio" id="python" name="linguagem" value="python" required>
             <label for="python">Python</label>
         </fieldset>
 
         <button type="submit">Enviar Respostas</button>
     </form>
-
-    <script src="script.js"></script>
 </body>
 </html>
