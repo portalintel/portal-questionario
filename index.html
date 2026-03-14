@@ -13,20 +13,49 @@
 
         <fieldset>
             <legend>Informações Pessoais</legend>
+            
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
+
+            <label for="filhos">Possui filhos?</label>
+            <div class="radio-group">
+                <input type="radio" id="filhos_sim" name="filhos" value="sim" required>
+                <label for="filhos_sim">Sim</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="filhos_nao" name="filhos" value="nao" required>
+                <label for="filhos_nao">Não</label>
+            </div>
+
+            <label for="estado_civil">Estado Civil:</label>
+            <select id="estado_civil" name="estado_civil" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viuvo">Viúvo(a)</option>
+            </select>
         </fieldset>
 
         <fieldset>
             <legend>Pergunta 1: Qual sua linguagem favorita?</legend>
-            <input type="radio" id="js" name="linguagem" value="javascript" required>
-            <label for="js">JavaScript</label>
             
-            <input type="radio" id="python" name="linguagem" value="python" required>
-            <label for="python">Python</label>
+            <div class="radio-group">
+                <input type="radio" id="js" name="linguagem" value="javascript" required>
+                <label for="js">JavaScript</label>
+            </div>
+            
+            <div class="radio-group">
+                <input type="radio" id="python" name="linguagem" value="python" required>
+                <label for="python">Python</label>
+            </div>
         </fieldset>
 
         <button type="submit">Enviar Respostas</button>
     </form>
+
 </body>
 </html>
