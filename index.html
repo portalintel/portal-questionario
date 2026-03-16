@@ -43,22 +43,130 @@
         </fieldset>
 
         <fieldset>
-            <legend>Pergunta 1: Qual sua linguagem favorita?</legend>
-            <div class="radio-group">
-                <input type="radio" id="js" name="linguagem" value="javascript" required>
-                <label for="js">JavaScript</label>
-            </div>
-            <div class="radio-group">
-                <input type="radio" id="python" name="linguagem" value="python" required>
-                <label for="python">Python</label>
-            </div>
-        </fieldset>
+    <legend>Pergunta 1: Com que frequência você se sente confuso sobre quais contas já foram pagas ou se esquece de algum vencimento?</legend>
+    <div class="radio-group">
+        <input type="radio" id="frequente" name="gestao_contas" value="frequente" required>
+        <label for="frequente">Frequentemente (perco o controle das datas)</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="as_vezes" name="gestao_contas" value="as_vezes" required>
+        <label for="as_vezes">Às vezes (preciso conferir várias vezes para ter certeza)</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="raro" name="gestao_contas" value="raro" required>
+        <label for="raro">Raramente (tenho um método de organização eficaz)</label>
+    </div>
+</fieldset>
 
+        
+       <fieldset>
+    <legend>Pergunta 2: Qual é o seu maior incômodo ao precisar resolver algo em locais físicos (bancos, lotéricas ou órgãos públicos)?</legend>
+    <div class="radio-group">
+        <input type="radio" id="tempo" name="burocracia_fisica" value="tempo" required>
+        <label for="tempo">O tempo perdido em filas excessivas</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="localizacao" name="burocracia_fisica" value="localizacao" required>
+        <label for="localizacao">A dificuldade de encontrar o lugar ou saber o horário de funcionamento</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="informacao" name="burocracia_fisica" value="informacao" required>
+        <label for="informacao">A falta de informação clara sobre quais documentos levar</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 3: Você costuma conferir seu extrato bancário ou faturas em busca de taxas e cobranças que não reconhece?</legend>
+    <div class="radio-group">
+        <input type="radio" id="sim_sempre" name="taxas_indevidas" value="sim_sempre" required>
+        <label for="sim_sempre">Sim, e quase sempre encontro erros ou taxas abusivas</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="nao_confio" name="taxas_indevidas" value="nao_confio" required>
+        <label for="nao_confio">Não confiro, pois acho o extrato muito difícil de entender</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 4: Quando você precisa encontrar um serviço local específico, qual sua maior dificuldade?</legend>
+    <div class="radio-group">
+        <input type="radio" id="desatualizado" name="localizacao" value="desatualizado" required>
+        <label for="desatualizado">Encontrar informações atualizadas (endereço/telefone corretos)</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="confuso" name="localizacao" value="confuso" required>
+        <label for="confuso">Saber se o local realmente oferece o que eu preciso antes de ir até lá</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 5: Você possui alguma fonte de renda extra ou tem interesse em iniciar uma atividade para complementar seu orçamento?</legend>
+    <div class="radio-group">
+        <input type="radio" id="ja_possuo" name="renda_extra" value="ja_possuo" required>
+        <label for="ja_possuo">Já possuo uma renda extra e busco otimizá-la</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="tenho_interesse" name="renda_extra" value="tenho_interesse" required>
+        <label for="tenho_interesse">Não tenho, mas gostaria de encontrar uma forma simples de começar</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="sem_tempo" name="renda_extra" value="sem_tempo" required>
+        <label for="sem_tempo">Não tenho interesse no momento / Estou focado apenas no meu trabalho</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 6: Qual o seu nível de disposição para aprender a usar novos aplicativos ou ferramentas que prometem facilitar sua rotina?</legend>
+    <div class="radio-group">
+        <input type="radio" id="disposto_total" name="aprender_tecnologia" value="total" required>
+        <label for="disposto_total">Totalmente disposto, adoro testar novidades tecnológicas</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="disposto_se_facil" name="aprender_tecnologia" value="se_facil" required>
+        <label for="disposto_se_facil">Apenas se a ferramenta for muito simples e intuitiva</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="prefiro_manual" name="aprender_tecnologia" value="manual" required>
+        <label for="prefiro_manual">Prefiro continuar resolvendo as coisas do jeito tradicional/manual</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 7: Você confiaria em um assistente digital (robô) para monitorar suas contas e avisar sobre erros em cobranças?</legend>
+    <div class="radio-group">
+        <input type="radio" id="confio_sim" name="confianca_ia" value="sim" required>
+        <label for="confio_sim">Sim, acredito que a tecnologia erra menos que humanos</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="confio_parcial" name="confianca_ia" value="parcial" required>
+        <label for="confio_parcial">Teria receio no início, mas usaria se fosse recomendado</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="nao_confio" name="confianca_ia" value="nao" required>
+        <label for="nao_confio">Não, prefiro eu mesmo conferir tudo pessoalmente</label>
+    </div>
+</fieldset>
+
+        <fieldset>
+    <legend>Pergunta 8: Quanto tempo por semana você estima que gasta resolvendo burocracias ou problemas de bancos e contas?</legend>
+    <div class="radio-group">
+        <input type="radio" id="muito_tempo" name="tempo_gasto" value="muito" required>
+        <label for="muito_tempo">Mais de 3 horas por semana (muito estressante)</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="tempo_medio" name="tempo_gasto" value="medio" required>
+        <label for="tempo_medio">Entre 1 e 2 horas por semana</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" id="pouco_tempo" name="tempo_gasto" value="pouco" required>
+        <label for="pouco_tempo">Menos de 1 hora, resolvo tudo rapidamente</label>
+    </div>
+</fieldset>
 
         <div class="mission-box">
-            <p><strong>Por que estamos perguntando isso?</strong></p>
-            <p>Sabemos como a modernização desorganizada pode ser um desafio no dia a dia do brasileiro. Nosso objetivo é mapear esses obstáculos para criar <strong>soluções de automação</strong> que tragam inovação, simplicidade e praticidade de verdade para as pessoas e para o pequeno comércio.</p>
-        </div>
+    <p><strong>Rumo à verdadeira Transformação Digital</strong></p>
+    <p>Acreditamos que a <strong>modernidade</strong> deve ser sinônimo de facilidade. Estamos mapeando os gargalos burocráticos e financeiros para desenvolver <strong>soluções disruptivas e automatizadas</strong>. Queremos substituir filas, taxas indevidas e papéis perdidos por processos ágeis e <strong>inovação de ponta</strong> aplicada ao seu cotidiano.</p>
+</div>
 
         <div class="button-stack">
             <a href="https://portalintel.github.io/portal-inteligente-A/" class="btn-oferta" target="_blank">
