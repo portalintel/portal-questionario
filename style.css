@@ -31,7 +31,7 @@ legend {
 }
 
 /* 4. Inputs, Selects e Labels */
-label { display: block; margin-bottom: 8px; font-weight: 600; color: #444; }
+label { display: block; margin-bottom: 8px; font-weight: 600; color: #444; cursor: pointer; }
 
 input[type="text"], input[type="number"], select { 
     width: 100%; 
@@ -51,7 +51,8 @@ input:focus, select:focus {
 }
 
 /* 5. Radio Buttons */
-.radio-group { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.radio-group { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; padding: 10px; border-radius: 8px; transition: background 0.2s; }
+.radio-group:hover { background: #fdfdfd; }
 input[type="radio"] { width: 20px; height: 20px; cursor: pointer; }
 
 /* 6. Oferta e Missão */
@@ -77,15 +78,47 @@ input[type="radio"] { width: 20px; height: 20px; cursor: pointer; }
 }
 
 /* 7. Empilhamento de Botões (Vertical) */
-.button-container {
+.button-stack {
     display: flex;
-    flex-direction: column; /* Empilha os botões */
-    gap: 12px; /* Espaçamento entre os botões */
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 30px;
 }
 
-button[type="submit"], .btn-oferta {
-    width: 100%; /* Largura total */
+.btn-oferta, button[type="submit"] {
+    width: 100%;
     padding: 16px;
     border-radius: 12px;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Estilo específico do botão de Oferta */
+.btn-oferta {
+    background: linear-gradient(135deg, #ff8c00 0%, #ff4500 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+    line-height: 1.3;
+}
+
+.btn-oferta small { font-size: 12px; font-weight: normal; display: block; opacity: 0.9; }
+
+/* Estilo específico do botão de Enviar */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Efeito Hover */
+.btn-oferta:hover, button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
